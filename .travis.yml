@@ -1,0 +1,27 @@
+language: node_js
+
+before_install:
+  - cd ./Natours/starter
+
+install:
+  - npm ci
+
+
+before_script:
+  - cd ./Natours/starter
+
+script:
+  - npm compile-sass
+
+
+before_deploy:
+  - rm -rf ./Natours/starter/node_modules
+
+deploy:
+  provider: pages
+  local_dir: ./Natours/starter
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository
+  keep_history: true
+  on:
+    branch: master
