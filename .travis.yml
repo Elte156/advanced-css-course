@@ -5,6 +5,7 @@ cache:
   directories:
     - ./Natours/starter/node_modules
 
+
 before_install:
   - cd ./Natours/starter
 install:
@@ -15,12 +16,12 @@ install:
 script:
   - npm run compile-sass
 
+
 before_deploy:
-  - npm run compile-sass
+  - rm -rf ./.gitignore
   - rm -rf ./node_modules
   - rm -rf ./package*
   - rm -rf ./sass
-  - rm -rf ./.gitignore
 deploy:
   provider: pages
   local_dir: ./Natours/starter
