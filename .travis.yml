@@ -7,21 +7,20 @@ cache:
 
 before_install:
   - cd ./Natours/starter
-
 install:
   - npm ci
 
 
 # before_script:
-#   - cd ./Natours/starter
-
 script:
   - npm run compile-sass
 
 
-# before_deploy:
-#   - rm -rf ./Natours/starter/node_modules
-
+before_deploy:
+  - rm -rf ./Natours/starter/node_modules
+  - rm -rf ./Natours/starter/.*
+  - rm -rf ./Natours/starter/package*
+  - rm -rf ./Natours/starter/sass
 deploy:
   provider: pages
   local_dir: ./Natours/starter
