@@ -11,10 +11,9 @@ install:
   - npm ci
 
 
-before_script:
+# before_script:
+script:
   - npm run compile-sass
-# script:
-
 
 before_deploy:
   - npm run compile-sass
