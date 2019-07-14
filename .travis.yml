@@ -16,7 +16,7 @@ install:
 #   - cd ./Natours/starter
 
 script:
-  - npm compile-sass
+  - npm run compile-sass
 
 
 # before_deploy:
