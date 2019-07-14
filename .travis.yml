@@ -26,6 +26,6 @@ deploy:
   local_dir: ./Natours/starter
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository
-  keep_history: true
+  keep_history: false
   on:
     branch: master
