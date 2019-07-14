@@ -19,10 +19,10 @@ script:
 
 before_deploy:
   - npm run compile-sass
-  - rm -rf ./Natours/starter/node_modules
-  - rm -rf ./Natours/starter/.*
-  - rm -rf ./Natours/starter/package*
-  - rm -rf ./Natours/starter/sass
+  - rm -rf ./node_modules
+  - rm -rf ./.*
+  - rm -rf ./package*
+  - rm -rf ./sass
 deploy:
   provider: pages
   local_dir: ./Natours/starter
