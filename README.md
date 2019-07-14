@@ -1,3 +1,9 @@
+# Elte156 Advanced Course
+[![Build Status](https://travis-ci.com/Elte156/advanced-css-course.svg?branch=master)](https://travis-ci.com/Elte156/advanced-css-course)
+
+
+
+
 # Course Material and FAQ for my Advanced CSS Course
 
 This repo contains starter files and the finished project files for all the projects contained in the course.
