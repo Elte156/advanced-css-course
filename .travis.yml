@@ -4,6 +4,7 @@ node_js:
 cache:
   directories:
     - ./Natours/starter/node_modules
+    - /home/travis/.rvm/
 
 before_install:
   - cd ./Natours/starter
@@ -17,6 +18,7 @@ script:
 
 
 before_deploy:
+  - npm run compile-sass
   - rm -rf ./Natours/starter/node_modules
   - rm -rf ./Natours/starter/.*
   - rm -rf ./Natours/starter/package*
