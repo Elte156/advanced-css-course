@@ -20,7 +20,6 @@ script:
 before_deploy:
   - npm run compile-sass
   - rm -rf ./node_modules
-  - rm -rf ./.*
   - rm -rf ./package*
   - rm -rf ./sass
 deploy:
