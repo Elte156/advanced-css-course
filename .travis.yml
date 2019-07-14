@@ -12,15 +12,15 @@ install:
   - npm ci
 
 
-before_script:
-  - cd ./Natours/starter
+# before_script:
+#   - cd ./Natours/starter
 
 script:
   - npm compile-sass
 
 
-before_deploy:
-  - rm -rf ./Natours/starter/node_modules
+# before_deploy:
+#   - rm -rf ./Natours/starter/node_modules
 
 deploy:
   provider: pages
