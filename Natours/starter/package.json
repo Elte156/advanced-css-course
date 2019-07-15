@@ -6,12 +6,14 @@
   "scripts": {
     "watch": "node-sass sass/main.scss css/style.css -w",
     "compile-sass": "node-sass sass/main.scss css/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html"
   },
   "author": "Tony Pagaduan",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "parcel-bundler": "^1.12.3"
   },
   "dependencies": {}
 }
