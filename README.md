@@ -2,7 +2,8 @@
 [![Build Status](https://travis-ci.com/Elte156/advanced-css-course.svg?branch=master)](https://travis-ci.com/Elte156/advanced-css-course)
 
 
-
+Icon Fonts:
+https://github.com/linea-io/Linea-Iconset
 
 # Course Material and FAQ for my Advanced CSS Course
 
